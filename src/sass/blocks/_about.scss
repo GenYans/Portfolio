@@ -1,9 +1,10 @@
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(2,minmax(150px,));
-    grid-template-rows: repeat(2,minmax(150px));
+    grid-template-columns: repeat(2,minmax(300px,));
+    grid-template-rows: repeat(2,minmax(300px));
     grid-auto-rows: minmax(100px, auto);
     gap: 5px;
+    margin-top: 120px;
     grid-template-areas: 
     "img me"
     "img footer";
@@ -78,5 +79,10 @@ img {
         font-weight: 500;
         font-size: 12px;
         line-height: 18px;
+    }
+    &__icon img {
+        position: absolute;
+        width: 25px;
+        height: 23.45px;
     }
 }

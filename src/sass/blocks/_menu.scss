@@ -73,11 +73,12 @@
         }
         &:hover {
             &:before {
-                background-color: #fff;
+                background-color: #000000;
             }
         }
         a {
-            color: #fff;
+            color: #000000;
+            text-decoration: none;
         }
     }
     &__social {
