@@ -37,11 +37,46 @@ img {
     "web development ."
     "uiux . .";
 }
-.grid-elem {
-    background-color: rgba(1, 1, 96, 1);
-    color: #fff;
-}
-.plus {
-    background-color: orange;
-}
 
+.about {
+    &__for {
+        width: 79px;
+        height: 24px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    &__name {
+        width: 445px;
+        height: 60px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 60px;
+    }
+    &__text {
+        width: 570px;
+        height: 123px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+    }
+    &__subtitle {
+        width: 183px;
+        height: 21px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 21px;
+    }
+    &__descr {
+        width: 200px;
+        height: 89px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+    }
+}
