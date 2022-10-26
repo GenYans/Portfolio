@@ -1,0 +1,47 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2,minmax(150px,));
+    grid-template-rows: repeat(2,minmax(150px));
+    grid-auto-rows: minmax(100px, auto);
+    gap: 5px;
+    grid-template-areas: 
+    "img me"
+    "img footer";
+}
+
+#web {
+    grid-area: web;
+}
+#development {
+    grid-area: development;
+}
+#uiux {
+    grid-area: uiux;
+}
+
+#img {
+    grid-area: img;
+}
+#me {
+    grid-area: me;
+}
+img {
+    width: 400px;
+}
+#footer {
+    grid-area: footer;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-template-areas: 
+    "web development ."
+    "uiux . .";
+}
+.grid-elem {
+    background-color: rgba(1, 1, 96, 1);
+    color: #fff;
+}
+.plus {
+    background-color: orange;
+}
+

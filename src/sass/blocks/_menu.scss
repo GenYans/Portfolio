@@ -28,21 +28,20 @@
     z-index: 10;
     visibility: hidden;
     opacity: 0;
-    transition: all 0.6s;
+    transition: all .6s;
     &.active {
         left: 0;
         visibility: visible;
-        opacity: 1;
+        opacity: 1;    
     }
     &__block {
         position: relative;
-/*         left: -100%; */
-        transition: all .6s;
         width: 345px;
         background-color: $main-color;
         height: 100%;
         padding-top: 140px;
         padding-left: 40px;
+        transition: all .6s;
         z-index: 10;
     }
     &__close {
@@ -53,12 +52,12 @@
     }
     &__list {
         list-style-type: none;
-        padding-left: 40px;
+        padding-left: 35px;
     }
     &__link {
         position: relative;
         font-weight: bold;
-        font-style: 24px;
+        font-size: 24px;
         line-height: 36px;
         margin-bottom: 15px;
         &:before {
@@ -68,8 +67,8 @@
             top: 10px;
             width: 15px;
             height: 15px;
-            border: 2px solid black;
-            border-radius: 100%;        
+            border-radius: 100%;
+            border: 1px solid #000000;
             transition: all 0.6s;
         }
         &:hover {
@@ -78,8 +77,8 @@
             }
         }
         a {
-            color:white;
-        }        
+            color: #fff;
+        }
     }
     &__social {
         position: absolute;
@@ -90,14 +89,6 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        &__link {
-            &:hover {
-                svg path {
-                    fill: white;
-                }
-            }
-        }
-    }
     }
     &__overlay {
         position: fixed;
