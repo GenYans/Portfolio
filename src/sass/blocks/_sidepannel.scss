@@ -8,6 +8,13 @@
     justify-content: space-between;
     height: 340px;
     z-index: 3;
+    &__link {
+        &:hover {
+            svg path {
+                fill: $main-color;
+            }
+        }
+    }
     &__diveder {
         width: 2px;
         height: 70px;
