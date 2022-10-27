@@ -10,6 +10,11 @@
     margin: 0;
     padding: 0;
 }
+.border {
+    border-bottom: 3px solid $main-color;
+    width: 100px;
+    margin: 10px auto 0 auto;
+}   
 
 .container {
     width: 1140px;
@@ -22,3 +27,4 @@
 @import 'blocks/sidepannel';
 @import 'blocks/menu';
 @import 'blocks/about';
+@import 'blocks/resume';

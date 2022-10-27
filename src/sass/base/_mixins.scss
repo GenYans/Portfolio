@@ -2,11 +2,11 @@
     &:before {
         content: '';
         position: absolute;
-        width: 39px;
-        height: 36px;
+        width: 30px;
+        height: 25px;
         background: $main-color; 
         z-index: -1;
-        top: -25%;
+        top: 0;
         left: 0;
     }
 }
