@@ -1,21 +1,8 @@
 .skills {
     padding-top: 120px;
-    &__title {
-        position: relative;
-        text-align: center;
-        @include before_circle;
-        &:before {
-            top: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 100px;
-        }
     }
     &__wrapper {
         padding: 20px;
-    }
-    &__subtitle {
-        text-align: center;
     }
     &__block {
         border: 1px solid #000000;
@@ -72,6 +59,7 @@
         font-size: 14px;
         line-height: 21px;
         margin-left: -3px;
+        color: #ffff;
     }
     &-line {
         width: 350px;
@@ -87,4 +75,3 @@
         }
     }
     }
-}
