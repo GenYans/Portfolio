@@ -1,9 +1,5 @@
 .portfolio {
     padding-top: 120px;
-    }
-    &__subtitle {
-        text-align: center;
-    }
     &__wrapper {
         margin-top: 60px;
         display: grid;
@@ -28,3 +24,4 @@
             filter: saturate(10%);
         }
     }
+}
