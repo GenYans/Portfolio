@@ -26,15 +26,13 @@
             left: -15px;
         }
     }
-    &__type {
+    &__type, &__count {
         font-weight: 700;
         font-size: 14px;
         line-height: 21px;
     }
     &__count {
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 21px;
+        justify-self: end;
     }
     &__descr {
         font-weight: 500;
