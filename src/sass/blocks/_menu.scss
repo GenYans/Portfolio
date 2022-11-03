@@ -68,16 +68,16 @@
             width: 15px;
             height: 15px;
             border-radius: 100%;
-            border: 1px solid #000000;
+            border: 1px solid #252525;
             transition: all 0.6s;
         }
         &:hover {
             &:before {
-                background-color: #000000;
+                background-color: #252525;
             }
         }
         a {
-            color: #000000;
+            color: #252525;
             text-decoration: none;
         }
     }
