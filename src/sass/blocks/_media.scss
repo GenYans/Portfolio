@@ -19,7 +19,25 @@
             &-item {
                 grid-template-columns: 40px 195px;
                 column-gap: 15px;
+                row-gap: 50px;
             }
+        }
+    }
+    .resume {
+        &__wrapper {
+            grid-template-columns: repeat(2, 340px);
+        }
+    }
+    .skills {
+        .grid-container-skills {
+            grid-template-columns: 270px 270px 270px;
+            row-gap: 62px;
+            justify-content: center;
+        }
+        &__ratings {
+            column-gap: 100px;
+            grid-template: repeat(3,minmax(70px,auto))/repeat(2,350px);
+            justify-content: center;
         }
     }
 }
@@ -44,6 +62,14 @@
                 grid-template-columns: 40px 320px;
                 column-gap: 20px;
             }
+        }
+    }
+    .resume {
+        &__wrapper {
+            padding: 60px 60px 0 60px;
+            grid-template-columns: repeat(2,320px);
+            column-gap: 100px;
+            justify-content: center;
         }
     }
 }
@@ -76,6 +102,39 @@
             &-item {
                 grid-template-columns: 40px 200px;
                 column-gap: 20px;
+            }
+        }
+    }
+    .resume {
+        &__wrapper {
+            padding: 60px 60px 0 60px;
+            grid-template-columns: 436px;
+        }
+    }
+    .skills {
+        .grid-container-skills {
+            grid-template-columns: 270px 270px;
+            row-gap: 13px;
+            justify-content: center;
+        }
+        &__ratings {
+            column-gap: 100px;
+            grid-template: repeat(6,minmax(70px,auto))/repeat(1,530px);
+            justify-content: center;
+            &-line {
+                width: 542px;
+            }
+            &-title {
+                padding: 0;
+                @include before_circle;
+                 &:before {
+                    top: 0;
+                    width: 50px;
+                    margin-left: 495px;
+        }
+            }
+            &-counter {
+                margin-left: 13px;
             }
         }
     }
@@ -116,6 +175,16 @@
         }
         &__skills {
             grid-template-columns: 1fr;
+        }
+    }
+    .resume {
+        &__wrapper {
+            padding: 60px 60px 0 10px;
+            grid-template-columns: 290px;
+            &-item {
+                grid-template-columns: 40px 290px;
+                column-gap: 20px;
+            }
         }
     }
 }
