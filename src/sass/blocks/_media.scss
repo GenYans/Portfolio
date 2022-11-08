@@ -40,6 +40,17 @@
             justify-content: center;
         }
     }
+    .portfolio {
+        &__wrapper {
+            grid-template-columns: repeat(auto-fit, 280px);
+            grid-auto-rows: 280px;
+            justify-content: center;
+            .horizonal, .vertical {
+                grid-row: unset;
+                grid-column: unset;
+            }
+        }    
+    }
 }
 
 @media (max-width: 992px) {
@@ -70,6 +81,12 @@
             grid-template-columns: repeat(2,320px);
             column-gap: 100px;
             justify-content: center;
+        }
+    }
+    .price {
+        &__wrapper {
+            grid-template-columns: repeat(auto-fit, 350px);
+            padding: 0;
         }
     }
 }
@@ -106,12 +123,14 @@
         }
     }
     .resume {
+        padding-top: 50px;
         &__wrapper {
             padding: 60px 60px 0 60px;
             grid-template-columns: 436px;
         }
     }
     .skills {
+        padding-top: 50px;
         .grid-container-skills {
             grid-template-columns: 270px 270px;
             row-gap: 13px;
@@ -136,6 +155,16 @@
             &-counter {
                 margin-left: 13px;
             }
+        }
+    }
+    .portfolio {
+        padding-top: 50px;
+    }
+    .price {
+        padding-top: 50px;
+        &__wrapper {
+            margin-top: 20px;
+            justify-content: center;
         }
     }
 }
@@ -179,12 +208,45 @@
     }
     .resume {
         &__wrapper {
-            padding: 60px 60px 0 10px;
-            grid-template-columns: 290px;
+            padding: 60px 60px 0 60px;
+            grid-template-columns: 260px;
             &-item {
                 grid-template-columns: 40px 290px;
                 column-gap: 20px;
             }
+        }
+    }
+    .skills {
+        .grid-container-skills {
+            grid-template-columns: 270px;
+        }
+        &__ratings {
+            column-gap: 100px;
+            grid-template: repeat(6,minmax(60px,auto))/repeat(1,258px);
+            justify-content: space-around;
+            &-line {
+                width: 264px;
+            }
+            &-title {
+                padding: 0;
+                @include before_circle;
+                 &:before {
+                    top: 0;
+                    width: 50px;
+                    margin-left: 213px;
+                 }
+            }
+            &-counter {
+                margin-left: 0px;
+            }
+        }
+        .title_fz36 {
+            font-size: 23px;
+        }
+    }
+    .price {
+        &__wrapper {
+            grid-template-columns: repeat(auto-fit, 282px);
         }
     }
 }
