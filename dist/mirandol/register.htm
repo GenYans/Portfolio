@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration form</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link type="text/css" href="/css/style.css" rel="stylesheet">
+</head>
+<body>
+
+<div id="red_form">
+	<h2 align="center">REGESTRATION FORM</h2>
+	
+<form action="register.php" method="post">
+<input type="hidden" name="id" value="123456">
+
+<table border="0">
+<tr><td><div class="reg_input">Name:</div></td><td><input class="reg_input" type="text" name="fio" value=""></td></tr>
+<tr><td><div class="reg_title">Sex:</div></td><td><input type="radio" name="sex" value="1" checked>M <input type="radio" name="sex" value="2">F <input type="radio" name="sex" value="3">Other</td></tr>
+<tr><td><div class="reg_input">Password:</div></td><td><input class="reg_input" type="password" name="pass" value=""></td></tr>
+<td><div class="reg_title">City: </div><td>
+	<select class="reg_select" cols="100" name="city">
+	<option value="1">Moscow</option>
+	<option value="2">Saint-Petersburg</option>
+	<option value="4">Other</option>
+	</select>
+</td></tr>
+<tr><td colspan="2"></td></tr></table>
+<p><textarea name="descr" cols="35" rows="5"></textarea></p>
+	<span class="reg_agree"><p><input  type="checkbox" name="agree" value="Agree with user agreement">Agree with user agreement</p></span>
+<div id="reg_control">
+	<div style="float: left;"><input class="reg_button" type="submit" value="Register"></div>
+	<div style="float: right;"><input class="reg_button" type="reset" value="Clean" name="Clean"></div>
+</div>
+</table>
+</body>
+</html>

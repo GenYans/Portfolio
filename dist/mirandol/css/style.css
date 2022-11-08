@@ -1,0 +1,58 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial,Tahoma;
+	color: #444;
+}
+h2 {
+	font-size: 20px;
+	margin: 0 0 20px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #ccc;
+}
+#red_form {
+	width: 350px;
+	margin: 20px auto 0 auto;
+	padding: 10px;
+	background: #fff;
+	box-shadow: 5px 5px 10px #aaa;
+}
+.reg_title {
+	display: inline-block;
+	min-width: 160px;
+}
+input.reg_input {
+	width: 160px;
+	border: none;
+	border-bottom: 1px solid #aaa;
+	font-size: 16px;
+}
+input.reg_input: focus {
+	border-bottom: 1px solid #FFDB4D;
+}
+.reg_select {
+	width: 160px;
+	font-size: 14px;
+}
+.reg_agree {
+	display: block;
+	font-size: 13px;
+}
+textarea {
+	font-size: 16px;
+	color: #096407;
+	max-width: 330px;
+	max-height: 100px;
+}
+#reg_control {
+	overflow: hidden;
+	margin-top: 40px;
+}
+input.reg_button {
+	background: #5475c2;
+	font-size: 16px;
+	color: rgb(255, 255, 255);
+	padding: 5px;
+	border: 1px solid #5475c2;
+	border-radius: 3px;
+}
