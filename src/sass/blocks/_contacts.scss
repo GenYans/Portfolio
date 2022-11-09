@@ -97,4 +97,9 @@
             color:#fff;
         }  
     }
+    .about__for {
+        position: relative;
+        padding: 1px 0 0 12px;
+        @include before_circle;
+    }
 }
