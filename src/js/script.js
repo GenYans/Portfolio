@@ -16,3 +16,5 @@ const counter = document.querySelectorAll('.skills__ratings-counter'),
 counter.forEach( (item, i) => {
     lines[i].style.width = item.innerHTML;
 });
+
+

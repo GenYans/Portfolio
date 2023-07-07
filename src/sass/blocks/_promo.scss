@@ -17,10 +17,16 @@
         margin-top: 25px;
         display: flex;
         align-items: center;
-        justify-content: space-between;
-        width: 250px;
+        justify-content: left;
     }
     &__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 45px;
+        width: 150px;
+        background: rgba(128, 128, 128, 0.769);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
         color: #252525;
         &:hover {
             color:#fff;
