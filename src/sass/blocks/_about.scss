@@ -35,6 +35,9 @@
         margin-top: 20px;
         font-size: 14px;
         line-height: 21px;
+        span {
+            color: red;
+        }
     }
     &__skills {
         display: grid;

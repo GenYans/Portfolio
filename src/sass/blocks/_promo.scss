@@ -1,10 +1,11 @@
 .promo {
+    display: flex;
+    align-items: center;
     min-height: 100vh;
     position: relative;
-    background: url('../img/main_bg.svg') no-repeat 50%/cover;
-    padding-top: 205px;
+    background: url('../../img/bcgr.png') no-repeat 50%/cover;
     &__title {
-        width: 535px;
+        width: 700px;
         margin-top: 10px;
     }
     &__subtitle {
@@ -28,6 +29,20 @@
         background: rgba(128, 128, 128, 0.769);
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
         color: #252525;
+        &__about {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 45px;
+            width: 150px;
+            background: rgba(128, 128, 128, 0.769);
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+            color: #252525;
+            &:hover {
+                color:#fff;
+                text-decoration: none;
+            }   
+        }
         &:hover {
             color:#fff;
             text-decoration: none;

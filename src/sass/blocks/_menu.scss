@@ -36,10 +36,10 @@
     }
     &__block {
         position: relative;
-        width: 345px;
+        width: 300px;
         background-color: $main-color;
         height: 100%;
-        padding-top: 140px;
+        padding-top: 80px;
         padding-left: 40px;
         transition: all .6s;
         z-index: 10;
@@ -49,6 +49,11 @@
         top: 25px;
         right: 25px;
         cursor: pointer;
+        transform: rotate(45deg);
+                    transition: .6s ease-in-out;
+        &:hover {
+            transform: rotate(0deg);
+        }
     }
     &__list {
         list-style-type: none;
@@ -67,8 +72,7 @@
             top: 10px;
             width: 15px;
             height: 15px;
-            border-radius: 100%;
-            border: 1px solid #252525;
+            border: 2px solid #252525;
             transition: all 0.6s;
         }
         &:hover {
